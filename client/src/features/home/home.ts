@@ -3,11 +3,12 @@ import { FormsModule } from '@angular/forms';
 import { Register } from '../account/register/register';
 import { User } from '../../types/users';
 import { Input } from '@angular/core';
+import { NgClass } from '@angular/common';
 
 
 @Component({
   selector: 'app-home',
-  imports: [Register, FormsModule],
+  imports: [Register, FormsModule, NgClass],
   templateUrl: './home.html',
   styleUrl: './home.css',
 })
